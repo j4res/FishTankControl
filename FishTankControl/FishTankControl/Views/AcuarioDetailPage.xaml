@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FishTankControl.Views.AcuarioDetailPage"
+             Title="Detalle de Acuario">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Editar" Clicked="Editar_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="{Binding Acuario.Text}" FontSize="Medium"/>
+            <Label Text="{Binding Acuario.Description}" FontSize="Small"/>
+            <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                <Grid ColumnSpacing="30" HorizontalOptions="Center" RowSpacing="30" VerticalOptions="Center">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Row="0" Grid.Column="0" x:Name="LinkPez1" Text="PEZ 1"></Button>
+                    <Button Grid.Row="0" Grid.Column="1" x:Name="LinkPez2" Text="PEZ 2"></Button>
+
+                    <Button Grid.Row="1" Grid.Column="0" x:Name="LinkPez3" Text="PEZ 3"></Button>
+                    <Button Grid.Row="1" Grid.Column="1" x:Name="LinkPez4" Text="PEZ 4"></Button>
+
+                    <Button Grid.Row="2" Grid.Column="0" x:Name="LinkPez5" Text="PEZ 5"></Button>
+                    <Button Grid.Row="2" Grid.Column="1" x:Name="LinkPez6" Text="PEZ 6"></Button>
+
+                    <Button Grid.Row="3" Grid.Column="0" x:Name="LinkPez7" Text="PEZ 7"></Button>
+                    <Button Grid.Row="3" Grid.Column="1" x:Name="LinkPez8" Text="PEZ 8"></Button>
+
+                    <Button Grid.Row="4" Grid.Column="0" x:Name="LinkPez9" Text="PEZ 9"></Button>
+                    <Button Grid.Row="4" Grid.Column="1" x:Name="LinkPez10" Text="PEZ 10"></Button>
+
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
