@@ -17,8 +17,12 @@ namespace FishTankControl.Views {
     public partial class InformacionPezPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Image ImagenPez;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(InformacionPezPage));
+            ImagenPez = this.FindByName<global::Xamarin.Forms.Image>("ImagenPez");
         }
     }
 }

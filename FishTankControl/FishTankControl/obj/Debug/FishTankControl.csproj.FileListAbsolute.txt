@@ -31,7 +31,6 @@ C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl\o
 C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl\obj\Debug\FishTankControl.Views.InformacionPezPage.xaml.g.cs
 C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl\obj\Debug\FishTankControl.dll
 C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl\obj\Debug\FishTankControl.pdb
-C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl\obj\Debug\FishTankControl.dll.mdb
-C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl\bin\Debug\FishTankControl.dll.mdb
+C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl\obj\Debug\FishTankControl.csprojResolveAssemblyReference.cache
 C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl\obj\Debug\FishTankControl.dll.mdb
 C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl\bin\Debug\FishTankControl.dll.mdb

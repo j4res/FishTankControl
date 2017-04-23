@@ -13,6 +13,8 @@
             <Label Text="Especie:" FontSize="Medium" />
             <Label Text="{Binding Pez.Especie}" FontSize="Small" Margin="0" />
             <Label Text="Descripción:" FontSize="Medium" />
+            <Label Text="{Binding Pez.Nombre}" FontSize="Medium" HorizontalTextAlignment="Center"/>
+            <Image x:Name="ImagenPez" Source="algo.png"/>
             <ScrollView>
                 <StackLayout>
                     <Label Text="{Binding Pez.Descripcion}" FontSize="Small" Margin="0" />
