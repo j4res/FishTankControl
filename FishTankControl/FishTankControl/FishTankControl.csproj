@@ -70,6 +70,15 @@
     <Compile Include="Views\ConfiguracionPage.xaml.cs">
       <DependentUpon>ConfiguracionPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\DatosPez.xaml.cs">
+      <DependentUpon>DatosPez.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DatosPezBasicInfoTab.xaml.cs">
+      <DependentUpon>DatosPezBasicInfoTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DatosPezPersonalInfoTab.xaml.cs">
+      <DependentUpon>DatosPezPersonalInfoTab.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\EditarAcuarioPage.xaml.cs">
       <DependentUpon>EditarAcuarioPage.xaml</DependentUpon>
     </Compile>
@@ -196,6 +205,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\InformacionPezPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\DatosPez.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\DatosPezBasicInfoTab.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\DatosPezPersonalInfoTab.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

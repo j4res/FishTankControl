@@ -24,6 +24,12 @@ namespace FishTankControl.Views
         {
             await Navigation.PushAsync(new EditarAcuarioPage(new MisAcuariosDetailViewModel(this.viewModel.Acuario)));
         }
+
+        async private void LinkPez_Clicked(object sender, System.EventArgs e)
+        {
+            var IdPez = ((Button)sender).Text;
+            await Navigation.PushAsync(new DatosPez(IdPez));
+        }
     }
     
 }

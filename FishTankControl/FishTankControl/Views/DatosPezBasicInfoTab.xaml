@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FishTankControl.Views.DatosPezBasicInfoTab"
+             Title="Información Basica">
+  <StackLayout>
+        <Label Text="{Binding Pez.Nombre}" FontSize="Medium" HorizontalTextAlignment="Center"/>
+        <Image x:Name="ImagenPez" Source=""/>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="{Binding Pez.Descripcion}" FontSize="Small" Margin="0" />
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
