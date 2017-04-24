@@ -1,8 +1,10 @@
 ﻿using FishTankControl.Models;
+using FishTankControl.ViewModels;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -17,6 +19,9 @@ namespace FishTankControl.Views
     public partial class InformacionPezPage : ContentPage
     {
         public Pez Pez { get; set; }
+        MisAcuariosViewModel viewModel;
+        bool encontroDatos = true;
+        const string mensajeNoDatos = "NO SE ENCONTRARON DATOS PARA EL PEZ BUSCADO";
 
         public InformacionPezPage(Pez pPez)
         {
@@ -27,8 +32,7 @@ namespace FishTankControl.Views
             string titulo = string.Empty;
             string extracto = string.Empty;
             string descripcion = string.Empty;
-            bool encontroDatos = true;
-
+            
             #region ConsultarInformacion
 
             var jsonTask = servicio.ConsultarInformacionPez(pPez);
@@ -42,7 +46,7 @@ namespace FishTankControl.Views
             if (paginaNula != null)
             {
                 encontroDatos = false;
-                descripcion = "NO SE ENCONTRARON DATOS PARA EL PEZ BUSCADO";
+                descripcion = mensajeNoDatos;
             }                    
            
             if (encontroDatos)
@@ -65,6 +69,7 @@ namespace FishTankControl.Views
 
                 descripcion = extracto;
             }
+            
             
             #endregion ConsultarInformacion
             
@@ -113,9 +118,25 @@ namespace FishTankControl.Views
             return URLImagen;
         }
 
-        private void AgregarAAcuario_Clicked(object sender, EventArgs e)
+        async private void AgregarAAcuario_Clicked(object sender, EventArgs e)
         {
-
+            if (!encontroDatos)
+            {
+                await DisplayAlert("Resultado", mensajeNoDatos, "Aceptar");                
+            }
+            else
+            {
+                viewModel = new MisAcuariosViewModel();
+                viewModel.LoadAcuariosCommand.Execute(null);
+                var acuarios = viewModel.Acuarios.Select(acuario => acuario.Text).ToArray();
+                string action = await DisplayActionSheet("Seleccione un acuario: ", "Cancelar", null, acuarios);
+                if (!action.Equals("Cancelar"))
+                {
+                    await DisplayAlert("Resultado", "Se agregó el pez satisfactoriamente al acuario: "+ action, "Aceptar");
+                    await Navigation.PopAsync();
+                }
+            }
+                        
         }
     }
 }
