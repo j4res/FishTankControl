@@ -31,6 +31,7 @@ namespace FishTankControl.Views
             //Children.Add(new DatosPezPersonalInfoTab(IdPez));
 
             BindingContext = this;
+            this.Title = Pez.Genero.ToUpper() +" "+Pez.Especie.ToUpper();
 
         }
 

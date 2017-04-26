@@ -51,10 +51,6 @@ namespace FishTankControl.Views
                     break;
             }
 
-            //var page = (Page)Activator.CreateInstance(item.TargetType);
-            //page.Title = item.Title;
-            //Detail = new NavigationPage(page);
-
             MasterPage.ListView.SelectedItem = null;
             IsPresented = false;
 

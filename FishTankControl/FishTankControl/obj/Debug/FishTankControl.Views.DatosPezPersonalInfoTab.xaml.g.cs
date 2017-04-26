@@ -17,8 +17,12 @@ namespace FishTankControl.Views {
     public partial class DatosPezPersonalInfoTab : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ListView DatosPezPersonalInfoListView;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(DatosPezPersonalInfoTab));
+            DatosPezPersonalInfoListView = this.FindByName<global::Xamarin.Forms.ListView>("DatosPezPersonalInfoListView");
         }
     }
 }

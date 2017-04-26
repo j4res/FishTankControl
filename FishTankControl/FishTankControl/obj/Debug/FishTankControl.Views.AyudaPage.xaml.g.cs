@@ -17,8 +17,12 @@ namespace FishTankControl.Views {
     public partial class AyudaPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label TextoAyuda;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(AyudaPage));
+            TextoAyuda = this.FindByName<global::Xamarin.Forms.Label>("TextoAyuda");
         }
     }
 }

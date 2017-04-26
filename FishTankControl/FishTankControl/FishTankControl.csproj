@@ -43,15 +43,20 @@
     <Compile Include="Helpers\ObservableRangeCollection.cs" />
     <Compile Include="Models\Acuario.cs" />
     <Compile Include="Models\BaseDataObject.cs" />
+    <Compile Include="Models\DatoPezPersonal.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\Pez.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AcuarioDataStore.cs" />
+    <Compile Include="Services\DatoPezDataStore.cs" />
     <Compile Include="Services\IDataStore.cs" />
     <Compile Include="Services\ServicioRest.cs" />
     <Compile Include="ViewModels\AboutViewModel.cs" />
+    <Compile Include="ViewModels\BaseDatosPezPersonalInfoTabViewModel.cs" />
     <Compile Include="ViewModels\BaseMisAcuariosViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\DatosPezPersonalInfoDetailViewModel.cs" />
+    <Compile Include="ViewModels\DatosPezPersonalInfoTabViewModel.cs" />
     <Compile Include="ViewModels\InicioPageMasterViewModel.cs" />
     <Compile Include="ViewModels\MisAcuariosDetailViewModel.cs" />
     <Compile Include="ViewModels\MisAcuariosViewModel.cs" />
@@ -70,6 +75,9 @@
     <Compile Include="Views\ConfiguracionPage.xaml.cs">
       <DependentUpon>ConfiguracionPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\DatoPezPersonalInfoDetailPage.xaml.cs">
+      <DependentUpon>DatoPezPersonalInfoDetailPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\DatosPez.xaml.cs">
       <DependentUpon>DatosPez.xaml</DependentUpon>
     </Compile>
@@ -81,6 +89,9 @@
     </Compile>
     <Compile Include="Views\EditarAcuarioPage.xaml.cs">
       <DependentUpon>EditarAcuarioPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EditarDatoPezPersonalInfoPage.xaml.cs">
+      <DependentUpon>EditarDatoPezPersonalInfoPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\InformacionPezPage.xaml.cs">
       <DependentUpon>InformacionPezPage.xaml</DependentUpon>
@@ -100,6 +111,9 @@
     </Compile>
     <Compile Include="Views\NuevoAcuarioPage.xaml.cs">
       <DependentUpon>NuevoAcuarioPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NuevoDatoPezPersonalInfoPage.xaml.cs">
+      <DependentUpon>NuevoDatoPezPersonalInfoPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -223,6 +237,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\DatosPezPersonalInfoTab.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\DatoPezPersonalInfoDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\EditarDatoPezPersonalInfoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\NuevoDatoPezPersonalInfoPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

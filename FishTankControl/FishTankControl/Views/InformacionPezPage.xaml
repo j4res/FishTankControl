@@ -18,6 +18,7 @@
             <ScrollView>
                 <StackLayout>
                     <Label Text="{Binding Pez.Descripcion}" FontSize="Small" Margin="0" />
+                    <Label Text="Fuente: Wikipedia" FontSize="Large"  Margin="0" />
                 </StackLayout>
             </ScrollView>
         </StackLayout>

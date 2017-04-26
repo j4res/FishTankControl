@@ -1,3 +1,4 @@
+C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl.Android\obj\Debug\FishTankControl.Android.csprojResolveAssemblyReference.cache
 C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl.Android\bin\Debug\FishTankControl.Android.dll
 C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl.Android\bin\Debug\FishTankControl.Android.pdb
 C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl.Android\bin\Debug\com.companyname.FishTankControl.apk
@@ -37,7 +38,6 @@ C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl.A
 C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl.Android\bin\Debug\Xamarin.Forms.Xaml.xml
 C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl.Android\obj\Debug\FishTankControl.Android.csprojResolveAssemblyReference.cache
 C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl.Android\obj\Debug\FishTankControl.Android.dll
 C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl.Android\obj\Debug\FishTankControl.Android.pdb
 C:\Users\Julio\Desktop\XAMARIN\FishTankControl\FishTankControl\FishTankControl.Android\obj\Debug\android\bin\com.companyname.FishTankControl.apk

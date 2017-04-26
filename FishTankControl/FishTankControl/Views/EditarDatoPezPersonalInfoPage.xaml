@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FishTankControl.Views.EditarDatoPezPersonalInfoPage"
+             Title="Editar Dato Pez Personal">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Guardar" Clicked="Guardar_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="Nombre del Dato" FontSize="Medium" />
+            <Entry Text="{Binding DatoPezPersonal.Nombre}" FontSize="Small" />
+            <Label Text="Descripción" FontSize="Medium" />
+            <Editor Text="{Binding DatoPezPersonal.Descripcion}" FontSize="Small" Margin="0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

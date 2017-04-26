@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FishTankControl.Views.DatosPezBasicInfoTab"
              Title="Información Basica">
-  <StackLayout>
+    <StackLayout Spacing="20" Padding="15">
         <Label Text="{Binding Pez.Nombre}" FontSize="Medium" HorizontalTextAlignment="Center"/>
         <Image x:Name="ImagenPez" Source=""/>
         <ScrollView>

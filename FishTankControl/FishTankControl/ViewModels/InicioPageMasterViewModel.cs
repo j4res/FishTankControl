@@ -15,7 +15,7 @@ namespace FishTankControl.ViewModels
             {
                     new InicioPageMenuItem { Id = 0, Title = "Buscar Peces" },
                     new InicioPageMenuItem { Id = 1, Title = "Mis Acuarios" },
-                    new InicioPageMenuItem { Id = 2, Title = "Configuración" },
+                    //new InicioPageMenuItem { Id = 2, Title = "Configuración" },
                     new InicioPageMenuItem { Id = 3, Title = "Ayuda" },
                     new InicioPageMenuItem { Id = 4, Title = "Acerca de" },
                 });
